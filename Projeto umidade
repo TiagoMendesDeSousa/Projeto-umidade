@@ -1,0 +1,15 @@
+def calcular_umidade(peso_inicial, peso_final):
+    umidade = ((peso_inicial - peso_final) / peso_inicial) * 100
+    return umidade
+
+def main():
+    print("Calculadora de Umidade de Alimento")
+    peso_inicial = float(input("Digite o peso inicial do alimento (em gramas): "))
+    peso_final = float(input("Digite o peso final do alimento após a remoção da água (em gramas): "))
+
+    umidade = calcular_umidade(peso_inicial, peso_final)
+
+    print(f"A umidade do alimento é de {umidade}%.")
+
+if __name__ == "__main__":
+    main() 
